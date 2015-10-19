@@ -15,7 +15,7 @@ h1, h2 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .calculator_form input[type='text'] {

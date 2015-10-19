@@ -72,5 +72,26 @@ function generate_character() {
 
 }
 
+function clickToLike(idName) {
+	var node = document.getElementById(idName),
+		likes = node.innerHTML;
+
+	console.log(likes); // '0 Likes', How do we incrememnt the number alone?
+
+	var likes_split_up = likes.split(' ') //split the string by every empty space
+
+	console.log(likes_split_up); // ['0', 'Likes']
+
+	var likes_as_integer = parseInt(likes_split_up[0], 10);
+
+	console.log(likes_as_integer);
+
+	likes_as_integer++ //increment Likes
+
+	node.innerHTML = likes_as_integer + ' Likes';
+
+	// To put it all on one line!
+	// node.innerHTML = ((parseInt(node.innerHTML.split(' ')[0], 10)) + 1) + ' Likes';
+}
 
 

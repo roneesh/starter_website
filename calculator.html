@@ -43,6 +43,11 @@
                     Word count:
                     <span id="js_word_count"> </span>
                 </p>
+                <p class="stat">
+                    Tweetable?
+                    <!-- Yes if less than 140 Chars, no if greater, how many characters too many it is if no, e.g 'No, exceeded by 6 characters' -->
+                    <span id="js_word_count"></span>
+                </p>
 
             </div>
             <div class="calculator">
@@ -83,14 +88,25 @@
                 <input type="submit" onclick="saveCharacter()" value="Save Character" />
             </div>
             <div class="calculator">
-                <h2> Time Difference </h2>
-                <input type="time" id="startTime" />
-                <input type="time" id="endTime" />
-                <input type="submit" value="Time Difference" onclick="timeDifference()" />
-                <p class="stat">
-                    Time Difference:
-                    <span id="time_difference"> </span>
+                <h2>Click Likes to Like</h2>
+                <p>
+                    <em>We are such stuff as dreams are made on, and our little life, is rounded with a sleep.</em>
+                    <span id="js_shake_1" onclick="clickToLike('js_shake_1');">0 Likes</span>
                 </p>
+                <p>
+                    <em>No legacy is so rich as honesty.</em>
+                    <span id="js_shake_2">0 Likes</span>
+                </p>
+                <p>
+                    <em>Wisely, and slow. They stumble that run fast.</em>
+                    <span id="js_shake_3">0 Likes</span>
+                </p>
+
+            </div>
+
+            <div class="saved_characters">
+                <h2>Saved Characters</h2>
+                
             </div>
         </main>
 
