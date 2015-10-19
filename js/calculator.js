@@ -51,6 +51,14 @@ function generate_character() {
 		return first_names[Math.floor(Math.random()*first_names.length)] + ' ' + 'Mistborne';
 	}
 
+	function randomAlignment() {
+		var adjective = ['lawful', 'neutral', 'chaotic'];
+		var alignment = ['good', 'neutral', 'evil'];
+
+		// make this output work, e.g. return lawful evil, or chaotic good;
+		// if the alignment is 'neutral neutral' instead return 'true neutral'
+	}
+
 	function rollStat() {
 		// add up three rolls of a six-sided die
 		// replace this with your function that doesn't allow a dice roll to be a 1

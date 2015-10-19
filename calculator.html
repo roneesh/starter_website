@@ -53,6 +53,10 @@
                     <span id="js_dnd_name"> </span>
                 </p>
                 <p class="stat">
+                    Alignment:
+                    <span id="js_dnd_alignment"> </span>
+                </p>
+                <p class="stat">
                     Strength:
                     <span id="js_dnd_str"> </span>
                 </p>
@@ -76,10 +80,17 @@
                     Intelligence:
                     <span id="js_dnd_int"> </span>
                 </p>
+                <input type="submit" onclick="saveCharacter()" value="Save Character" />
             </div>
             <div class="calculator">
-                
-                
+                <h2> Time Difference </h2>
+                <input type="time" id="startTime" />
+                <input type="time" id="endTime" />
+                <input type="submit" value="Time Difference" onclick="timeDifference()" />
+                <p class="stat">
+                    Time Difference:
+                    <span id="time_difference"> </span>
+                </p>
             </div>
         </main>
 
